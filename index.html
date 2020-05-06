@@ -4,7 +4,10 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 
   </head>
 
@@ -19,9 +22,25 @@
   <h2 class="text">Programmer</h2>
     </div>
     <div class="links">
-<a href="http://sampleresumetemplate.net/srt-resume.html" class="button" i>Download PDF</a>
+<a href="" class="button" id="cmd" >Download PDF</a>
 
+<script>
+    var doc = new jsPDF();
+    var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+            return true;
+        }
+    };
 
+    $('#cmd').click(function () {
+        doc.fromHTML($('#content').html(), 15, 15, {
+            'width': 170,
+                'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+    });
+
+</script>
  
 
        <h3> <a class="mail"  href="https://mail.google.com/mail"> apetrosyan071@gmail.com</a></h3>
