@@ -3,31 +3,39 @@
   <head>
     <title>CV</title>
     <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
-<div class="container">
+<div class="container" >
 
 <div class="header">
-  <div class="title">
-    <img class="circular--square" src="./images/img.jpg" />
-  <h1>Ani Petrosyan</h1>
-  <h2>Programmer</h2>
+  <div class="image">
+    <img class="circular--square" src="./images/img.jpg" /> </div>
+    <div class="title">
+  <h1 class="name">Ani Petrosyan</h1>
+  <h2 class="text">Programmer</h2>
+    </div>
+    <div class="links">
+<a href="http://sampleresumetemplate.net/srt-resume.html" class="button" i>Download PDF</a>
+
+
+ 
+
+       <h3> <a class="mail"  href="https://mail.google.com/mail"> apetrosyan071@gmail.com</a></h3>
+        
+            <i class="fa">&#xf09b; <a  class="githubLink" href="https://github.com/AniPetrosyan">Github link</a> </i>
+         
+						<h3 class="tel">Tel: (+374) 95208058 </h3></div>
+
+
 </div>
-
-<div class="contact-info">
-						<h3><a id="pdf" href="#">Download PDF</a></h3>
-            <h3><a href="https://mail.google.com/mail">apetrosyan071@gmail.com</a></h3>
-            <h3><a href="https://github.com/AniPetrosyan">Github link</a></h3>
-						<h3>Tel: (+374) 95208058 </h3>
-					</div>
-</div>
-
-
 
 <div class="persInformation">
-  <h2>Personal information</h2>
-  <p>I am 16 years old. I’m from Yerevan. I’m a programmer. 
+  <h2 class="heading">Personal information</h2>
+  <p class="info">I am 16 years old. I’m from Yerevan. I’m a programmer. 
     I am an active volunteer. I’m an outgoing person. 
     I love to explore new things and venture new ideas. 
     I have some projects with Swift, PHP, WordPress, Unity, Python, Matlab, Simulink, HTML,
@@ -36,12 +44,13 @@
 
 
 <div class="skills">
-  <h2>Skills</h2> 
+  <h2 class="heading">Skills</h2> 
 
   <ul class="item">
   <li>Phaser3</li>
   <li>JavaScript ES5/ES6a</li>
   <li>WordPress</li>
+  <li>Bootstrap</li>
    <li>HTML5, CSS3</li>
  <li>Unity</li>
  <li>Python</li>
@@ -55,39 +64,44 @@
 
 
 <div class="workHistory">
-  <h2>Work History</h2> 
+  <h2 class="heading">Work History</h2> 
 
 <div class="volunteering">
-<h3> Volunteer in Wikimedia Armenia:</h3>
-<h4>May 2019 – Present</h4>
-<p>I am WikiEditor-translator. I translate articles from English Wikipedia into Armenian Wikipedia.</p>
+  <h4 class="date">May 2019 – Present</h4>
+<h3 class="equal heading"> Volunteer in Wikimedia Armenia:</h3>
+
+<p class="description">I am WikiEditor-translator. I translate articles from English Wikipedia into Armenian Wikipedia.</p>
 </div>
 
 
 <div class="volunteering">
-<h3> Volunteer in Tumo Center for Creative Technologies: </h3>
-<h4>September 2019 – Present</h4>
-<p>I am the workshop leader assistant in Tumo. I help them to do the workshop, I help the pupils with their final project. I help them with web development and programming</p>
+  <h4  class="date" >September 2019 – Present</h4>
+<h3 class="equal heading"> Volunteer in Tumo Center for Creative Technologies: </h3>
+
+<p class="description">I am the workshop leader assistant in Tumo. I help them to do the workshop, I help the pupils with their final project. I help them with web development and programming</p>
 </div>
 
 <div class="volunteering">
-<h3> Volunteer in Free Students Forum:  </h3>
-<h4>January 2020 – Presentt</h4>
-<p>I have a little lectures about InternetSecurity, programming. Also we made a little startup. It's a game. I help the volunteers to make it application.</p>
-</div>
+  <h4  class="date">January 2020 – Present</h4>
+<h3 class="equal heading"> Volunteer in Free Students Forum:  </h3>
 
-
-<div class="volunteering">
-<h3>  Volunteer in Armenian Volunteers Bank: </h3>
-<h4>February 2020 – Present</h4>
-<p>I help many organizations to make interesting educational events.</p>
+<p class="description">I have a little lectures about InternetSecurity, programming. Also we made a little startup. It's a game. I help the volunteers to make it application.</p>
 </div>
 
 
 <div class="volunteering">
-<h3>  Volunteer in ArevaKam: </h3>
-<h4>March 2020 – May 2020</h4>
-<p>I was Content writer </p>
+  <h4  class="date">February 2020 – Present</h4>
+<h3 class="equal heading">  Volunteer in Armenian Volunteers Bank: </h3>
+
+<p class="description">I help many organizations to make interesting educational events.</p>
+</div>
+
+
+<div class="volunteering">
+  <h4  class="date">March 2020 – May 2020</h4>
+<h3 class="equal heading">  Volunteer in ArevaKam: </h3>
+
+<p description>I was Content writer </p>
 </div>
 
 </div>
@@ -95,7 +109,7 @@
 
 
 <div class="education">
-<h2>Education</h2>
+<h2 class="heading">Education</h2>
 <ul class="el">
   <li>SoloLearn(2016 – Present) </li>
 <li>Technolab (September 2019 – Present)  </li>
@@ -106,7 +120,7 @@
 
 
 <div class="languages">
-<h2>Language Proficiency</h2>
+<h2 class="heading">Language Proficiency</h2>
 <ul class="element">
   <li>Armenian: Native proficiency </li>
 <li>Russian: Intermediate proficiency   </li>
@@ -117,13 +131,16 @@
 
 
 
-<div id="footer">
-			<p>Ani Petrosyan &mdash; <a href="https://mail.google.com/mail">apetrosyan071@gmail.com</a> &mdash; (+374) 95208058</p>
+<div class="footer">
+			<p class="footerText">Ani Petrosyan &mdash; <a href="https://mail.google.com/mail">apetrosyan071@gmail.com</a> &mdash; (+374) 95208058</p>
 		</div><!--// footer -->
 
 
 
 </div>
+
+
+
 
   </body>
 </html>
